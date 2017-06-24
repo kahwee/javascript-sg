@@ -46,7 +46,7 @@ Let's look at the main dirctories in the defaults directory.
 
 You see `jqueryui`, `lib`, `META-INF`, `sdk`, `ui` and `video`, of which `jqueryui`, `ui` and `video` are shown in the Animate CC Components Panel here:
 
-![Animate CC Components Panel](/public/images/animate-cc-components-panel.png)
+![Animate CC Components Panel](/img/animate-cc-components-panel.png)
 
 While I do not know why are Animate CC HTML5 Components ordered the way it is, a set of components qualifies as category set when it contains `components.js`.
 
