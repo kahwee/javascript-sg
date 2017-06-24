@@ -2,7 +2,7 @@
 date: 2017-02-14T00:00:00Z
 published: true
 title: Quick dive into Animate CC HTML5 Components
-url: /2017/02/14/introduction-to-animate-cc-components/
+url: /2017/02/14/introduction-to-animate-cc-components/index.html
 ---
 
 I've been working on Adobe Animate CC quite a bit lately and wanted to create some custom Animate CC components. There hasn't been too much documentation on this topic, so here's what I gathered. I learnt a lot by looking at Adobe Animate CC's default set of components which can be found in:
@@ -104,7 +104,7 @@ The `properties[].name` placeholders can be defined in `.\HTML5Components\video\
   "locale": "en_US",
   "language": "en",
   "CATEGORY_VIDEO": "Video",
-  "DISP_NAME_VIDEO": "Video",	
+  "DISP_NAME_VIDEO": "Video",
   "PROP_SOURCE": "source",
   "PROP_AUTOPLAY": "autoplay",
   "PROP_CONTROLS": "controls",
@@ -120,7 +120,7 @@ The `properties[].name` placeholders can be defined in `.\HTML5Components\video\
 
 ### Types of properties
 
-* `Video Content Path`: Lets you select a video file. 
+* `Video Content Path`: Lets you select a video file.
 * `Boolean`: Reveal a checkbox to check and uncheck. The `default` includes `"true"` and `"false"` (note that they are strings instead of booleans).
 * `Image Path`: Lets you select an image file. Once you chosen the image, it gets copied into your `images` directory.
 * `String`: Lets you set a text field.
@@ -132,9 +132,9 @@ The `properties[].name` placeholders can be defined in `.\HTML5Components\video\
 
 ```json
 {
-  "name": "PROP_CLASS", 
-  "variable": "class", 
-  "type": "String", 
+  "name": "PROP_CLASS",
+  "variable": "class",
+  "type": "String",
   "default": "video"
 }
 ```
