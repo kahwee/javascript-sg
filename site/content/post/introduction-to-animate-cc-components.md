@@ -54,7 +54,7 @@ While I do not know why are Animate CC HTML5 Components ordered the way it is, a
 
 If there's a component to start learning from, I'll humbly suggest "Video" as it is relatively trivial in terms of definition. Let's start by dragging a "Video" from the Animate CC Components Panel.
 
-![Animate CC Components Panel](/public/images/animate-cc-canvas-with-component.png)
+![Animate CC Components Panel](/img/animate-cc-canvas-with-component.png)
 
 The component is available as it picks up contents from `.\\HTML5Components\\video\\components.js` which is a JSON file.
 
@@ -90,7 +90,7 @@ In the above JSON file -- oddly named `components.json`, you see `components` ke
 
 There are 8 properties and they all correspond to what is in the Property Panel in order.
 
-![Animate CC Property Panel for Video](/public/images/animate-cc-component-property.png)
+![Animate CC Property Panel for Video](/img/animate-cc-component-property.png)
 
 The `properties\[\].name` placeholders can be defined in `.\\HTML5Components\\video\\locale\\strings.json`. Here's the contents for the file:
 
