@@ -9,12 +9,12 @@ tags:
 - api
 - microservice
 title: Thoughts on AWS Lambda
-url: /2016/09/04/thoughts-on-aws-lambda/
+url: /2016/09/04/thoughts-on-aws-lambda.html
 ---
 
 Amazon Web Services has a product called Lambda that I had the opportunity to test out in a Hackathon. It made me rethink what micro-services is about.
 
-The idea isn't a new one, you send your source code up to AWS and it prepares it onto a server and exposes an `index.handler`. What this handler does is that it exposes a set of API that you can call using REST. 
+The idea isn't a new one, you send your source code up to AWS and it prepares it onto a server and exposes an `index.handler`. What this handler does is that it exposes a set of API that you can call using REST.
 
 The only downside is that you have to upload a ZIP source code all the time to deploy this. Or you could do this through pushing it to S3. In either cases you have this rudimentary interface to open up some really progressive ideas on micro-services.
 
