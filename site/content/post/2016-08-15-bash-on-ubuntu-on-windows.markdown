@@ -2,7 +2,7 @@
 date: 2016-08-15T00:00:00Z
 published: true
 title: Bash on Ubuntu on Windows
-url: /2016/08/15/bash-on-ubuntu-on-windows/
+url: /2016/08/15/bash-on-ubuntu-on-windows.html
 ---
 
 So Microsoft added Ubuntu into Windows which is quite nice (besides the rather mouthful name). Let's dig a little beneath the surface of things.
@@ -19,7 +19,7 @@ Here: `C:\Users\<YourUserName>\AppData\Local\lxss`
 
 For example, you usually `/etc` directory is mapped here: `C:\Users\KahWee\AppData\Local\lxss\rootfs\etc`.
 
-I tried to manually edit the files here in Windows and it glitched out. Somehow the file disappeared from Bash on Ubuntu. 
+I tried to manually edit the files here in Windows and it glitched out. Somehow the file disappeared from Bash on Ubuntu.
 
 ## How do I get to my Windows drives?
 
@@ -31,7 +31,7 @@ You can restart only when you restart your Windows.
 
 ## Can I open files with Windows applications?
 
-Yes but it doesn't really sync properly. I wanted a setup where I use Bash on Ubuntu for command line and the Windows file system to do web development. I couldn't quite get used to this workflow. 
+Yes but it doesn't really sync properly. I wanted a setup where I use Bash on Ubuntu for command line and the Windows file system to do web development. I couldn't quite get used to this workflow.
 
 ## Does Bash on Ubuntu support tabs?
 

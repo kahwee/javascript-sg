@@ -2,7 +2,7 @@
 date: 2016-07-22T00:00:00Z
 published: true
 title: Mocha v3 released
-url: /2016/07/22/mocha-v3-released/
+url: /2016/07/22/mocha-v3-released.html
 ---
 
 This is excited -- a major update of a longstanding testing tool.

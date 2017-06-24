@@ -2,7 +2,7 @@
 date: 2016-08-11T00:00:00Z
 published: true
 title: How to run PHP 5.6 with Apache in El Capitan
-url: /2016/08/11/how-to-run-php-5-6-with-apache-in-el-capitan/
+url: /2016/08/11/how-to-run-php-5-6-with-apache-in-el-capitan.html
 ---
 
 I'm assuming you like to install PHP 5.6 with MySQL and want something more than MAMP. Good news is that Mac OS X El Capitan comes with Apache so you simply have to configure it.

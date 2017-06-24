@@ -2,7 +2,7 @@
 date: 2016-08-10T00:00:00Z
 published: true
 title: Why did Flash have to die?
-url: /2016/08/10/why-did-flash-have-to-die/
+url: /2016/08/10/why-did-flash-have-to-die.html
 ---
 
 *(Disclaimer: I work in the advertising industry which utilize Flash for advertising opportunities.)*
@@ -18,7 +18,7 @@ Here's the blog post:
 >
 > Source: [Chrome](https://chrome.googleblog.com/2016/08/flash-and-chrome.html)
 
-Flash is primarily used for advertisements and games, hardly for analytics purposes as far as I know. 
+Flash is primarily used for advertisements and games, hardly for analytics purposes as far as I know.
 
 ## Why browser and device vendors hate Flash so much?
 
