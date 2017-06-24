@@ -1,5 +1,5 @@
 ---
-date: 2017-02-14T00:00:00Z
+date: 2017-02-14T00:00:00.000Z
 published: true
 title: Quick dive into Animate CC HTML5 Components
 url: /2017/02/14/introduction-to-animate-cc-components.html
@@ -151,3 +151,4 @@ In this case, `class` is used in defining the class for the "Video" component wh
 ## End
 
 This post gets a little longer than I hope for. I'll end here and guide you through the source code of the "Video" component in the next post. We'll dive into `components[].source`, located in `.\HTML5Components\video\src\video.js`.
+
