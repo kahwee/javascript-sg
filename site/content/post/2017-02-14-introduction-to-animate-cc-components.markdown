@@ -2,7 +2,7 @@
 date: 2017-02-14T00:00:00Z
 published: true
 title: Quick dive into Animate CC HTML5 Components
-url: /2017/02/14/introduction-to-animate-cc-components/index.html
+url: /2017/02/14/introduction-to-animate-cc-components.html
 ---
 
 I've been working on Adobe Animate CC quite a bit lately and wanted to create some custom Animate CC components. There hasn't been too much documentation on this topic, so here's what I gathered. I learnt a lot by looking at Adobe Animate CC's default set of components which can be found in:
