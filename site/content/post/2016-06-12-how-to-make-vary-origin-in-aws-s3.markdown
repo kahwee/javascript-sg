@@ -1,8 +1,10 @@
 ---
+date: 2016-06-12T00:00:00Z
 published: true
 title: How to make Vary Origin in AWS S3
-layout: post
+url: /2016/06/12/how-to-make-vary-origin-in-aws-s3/
 ---
+
 I've been trying to make Vary Origin work with Amazon Web Services S3. Here is how.
 
 You need to Add CORS Configuration. Paste in the following:

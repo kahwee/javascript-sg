@@ -1,8 +1,10 @@
 ---
+date: 2016-08-05T00:00:00Z
 published: true
 title: Learnings from CORS
-layout: post
+url: /2016/08/05/learnings-from-cors/
 ---
+
 CORS is a little hard to understand. I'll give you a quick overview of what it is about.
 
 There are two main modes of CORS:

@@ -1,8 +1,10 @@
 ---
+date: 2016-08-02T00:00:00Z
 published: true
 title: Edge 14 to be released tomorrow
-layout: post
+url: /2016/08/02/edge-14-to-be-released-tomorrow/
 ---
+
 Microsoft is preparing to release Windows anniversary updates alongside with Edge 14. What's great is how much more compliant Edge is. Microsoft did a great job in ensuring this in the recent years:
 
 ![Edge 14 is on par with Firefox](/public/images/edge-improvements.png)

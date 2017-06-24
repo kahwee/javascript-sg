@@ -1,8 +1,10 @@
 ---
+date: 2016-08-01T00:00:00Z
 published: true
 title: A restart again
-layout: post
+url: /2016/08/01/a-restart-again/
 ---
+
 I haven't been maintaining my blogs well and they tend to get hacked due to my negligence. Each time there's a hack I restart the blog and lose content that I spent ages constructing.
 
 The losing content part always saddens me. 
