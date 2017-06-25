@@ -15,7 +15,7 @@ import cssnano from 'cssnano'
 
 const browserSync = BrowserSync.create()
 let hugoBin = `./bin/hugo.${process.platform === 'win32' ? 'exe' : process.platform}`
-hugoBin = `/usr/local/bin/hugo`
+// hugoBin = `/usr/local/bin/hugo`
 const defaultArgs = ['-d', '../dist', '-s', 'site']
 
 gulp.task('hugo', (cb) => buildSite(cb))
