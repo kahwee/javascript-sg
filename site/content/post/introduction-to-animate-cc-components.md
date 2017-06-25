@@ -4,6 +4,9 @@ published: true
 title: Quick dive into Animate CC HTML5 Components
 description: Use Adobe Animate CC to create HTML Components on top of your canvases
 url: /2017/02/14/introduction-to-animate-cc-components.html
+tags:
+- adobe
+- animate cc
 ---
 I've been working on Adobe Animate CC quite a bit lately and wanted to create some custom Animate CC components. There hasn't been too much documentation on this topic, so here's what I gathered. I learnt a lot by looking at Adobe Animate CC's default set of components which can be found in:
 

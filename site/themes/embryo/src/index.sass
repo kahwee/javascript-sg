@@ -3,22 +3,18 @@
 
 // 2. Set your own initial variables
 // Update blue
-$blue: #72d0eb
+$blue: #4B6685
 // Add pink and its invert
-$pink: #ffb3b3
-$pink-invert: #fff
-// Add a serif family
-$family-serif: "Merriweather", "Georgia", serif
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $pink
-$primary-invert: $pink-invert
+$primary: #2F3945
+$primary-invert: #A7C6E3
 // Use the existing orange as the danger color
 $danger: $orange
-// Use the new serif family
-$family-primary: $family-serif
 
 // 4. Import the rest of Bulma
 @import "./node_modules/bulma/bulma"
+
+@import "custom.scss"
 @import "highlight.scss"

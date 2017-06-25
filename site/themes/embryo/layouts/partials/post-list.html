@@ -1,8 +1,13 @@
-<ul id="post-list">
-    {{ range where .Paginator.Pages "Section" "ne" "" }}
-        <li>
-            <a href='{{ .URL }}'><aside class="dates">{{ .Date.Format "Jan 2 2006" }}</aside></a>
-            <a href='{{ .URL }}'>{{ .LinkTitle }}<h2>{{ .Description | markdownify }}</h2></a>
-        </li>
-    {{ end }}
-</ul>
+{{ range where .Paginator.Pages "Section" "ne" "" }}
+<article class="media">
+  <div class="media-content">
+    <div class="content">
+      <a href='{{ .URL }}'>
+        <p>{{ .Date.Format "Jan 2 2006" }}</p>
+        <p class="title is-4">{{ .LinkTitle }}</p>
+        <p class="subtitle is-6">{{ .Description | markdownify }}</p>
+      </a>
+    </div>
+  </div>
+</article>
+{{ end }}

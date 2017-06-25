@@ -1,36 +1,46 @@
 {{ define "main" }}
-<article class="post">
-    <header>
+<div class="columns is-multiline is-mobile">
+  <div class="column">
+    <div class="content is-medium">
+      <header>
         <h1>{{ .Title }}</h1>
-        <h2 class="headline">
+        <h5>
         {{ .Date.Format "January 2, 2006" }}
-        <br>
+        <hr>
         {{ with .Params.tags }}
         {{ if ge (len .) 1 }}
-            {{ range . }}
-                <a href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
-            {{ end }}
+          {{ range . }}
+            <span class="tag">
+              <a href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
+            </span>
+          {{ end }}
         {{ end }}
         {{ end}}
-        </h2>
-    </header>
-    <section id="post-body">
+        </h5>
+      </header>
+      <section id="post-body">
         {{ .Content }}
-    </section>
-</article>
+      </section>
+    </div>
+  </div>
 
-<footer id="post-meta" class="clearfix">
-    {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
-    <img class="avatar" src="{{ "images/avatar.png" | absURL }}">
-    <div>
+  <div class="column is-one-quarter">
+
+    <footer id="post-meta" class="clearfix">
+      {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
+      <img class="avatar" src="{{ "images/avatar.png" | absURL }}">
+      <div>
         <span class="dark">{{ .Site.Params.name }}</span>
         <span>{{ .Site.Params.aboutAuthor }}</span>
-    </div>
-    {{ with .Site.Params.twitter }}</a>{{ end }}
-    <section id="sharing">
+      </div>
+      {{ with .Site.Params.twitter }}</a>{{ end }}
+      <section id="sharing">
         {{ partial "share.html" . }}
-    </section>
-</footer>
+      </section>
+    </footer>
+  </div>
+</div>
+
 
 {{ template "_internal/disqus.html" . }}
 

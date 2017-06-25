@@ -8,11 +8,11 @@ disqusShortname = ""
 
 
 [params]
-	name = "John Doe"
+	name = "KahWee Teng"
 	description = "Describe your website"
 	bio = "Blogger & Programmer"
 	# Enter optionally your twitter account
-	twitter = "Your Twitter account"
+	twitter = "kahwee"
 	enableRSS = true
 
 	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
@@ -46,7 +46,6 @@ disqusShortname = ""
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://www.twitter.com/"
-    facebook = "https://www.facebook.com/"
-    github   = "https://www.github.com/"
-    dribble  = "https://www.dribbble.com/"
+    twitter  = "https://www.twitter.com/kahwee"
+    facebook = "https://www.facebook.com/kahwee"
+    github   = "https://www.github.com/kahwee"

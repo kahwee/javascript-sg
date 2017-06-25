@@ -1,7 +1,13 @@
-
-{{ define "profile" }}{{ partial "profile.html" . }}{{ end }}
-
+{{ define "profile" }}
+<div class="columns is-multiline is-mobile">
+  <div class="column">
+    <div class="content is-medium">
+      {{ partial "profile.html" . }}
+    </div>
+  </div>
+</div>
+{{ end }}
 {{ define "main" }}
-		{{ partial "post-list.html"  . }}
-        {{ partial "pagination.html" . }}
+  {{ partial "post-list.html"  . }}
+  {{ partial "pagination.html" . }}
 {{ end }}

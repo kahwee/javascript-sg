@@ -1,12 +1,16 @@
-<footer id="footer">
-    {{ if .Site.Social }}
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      {{ if .Site.Social }}
         {{ partial "social.html" . }}
-    {{ end }}
-    <p class="small">
-    {{ with .Site.Params.copyright }}
+      {{ end }}
+      <p class="small">
+      {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
-    {{ else }}
+      {{ else }}
         © Copyright {{ now.Format "2006" }} {{ .Site.Params.name }}
-    {{ end }}
-    </p>
+      {{ end }}
+      </p>
+    </div>
+  </div>
 </footer>

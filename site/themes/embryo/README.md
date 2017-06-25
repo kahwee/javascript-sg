@@ -10,8 +10,8 @@ Cactus is a minimalistic theme for bloggers based on the default theme of the sa
 
 Inside the folder of your Hugo site run:
 
-    $ cd themes
-    $ git clone https://github.com/digitalcraftsman/hugo-cactus-theme.git
+  $ cd themes
+  $ git clone https://github.com/digitalcraftsman/hugo-cactus-theme.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -44,7 +44,7 @@ Assign either `font-awesome` or `mono-social` to the `iconFont` variable. The Mo
 
 In order to see your site in action, run Hugo's built-in local server.
 
-    $ hugo server
+  $ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
