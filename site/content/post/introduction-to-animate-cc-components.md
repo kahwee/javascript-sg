@@ -2,18 +2,19 @@
 date: 2017-02-14T00:00:00.000Z
 published: true
 title: Quick dive into Animate CC HTML5 Components
+description: Use Adobe Animate CC to create HTML Components on top of your canvases
 url: /2017/02/14/introduction-to-animate-cc-components.html
 ---
 I've been working on Adobe Animate CC quite a bit lately and wanted to create some custom Animate CC components. There hasn't been too much documentation on this topic, so here's what I gathered. I learnt a lot by looking at Adobe Animate CC's default set of components which can be found in:
 
 Windows
 
-* Defaults: C:\\Program Files\\Adobe\\Adobe Animate CC 2017\\Common\\Configuration\\HTML5Components
-* Custom: C:\\Users\\KahWee\\AppData\\Local\\Adobe\\Animate CC 2017\\en_US\\Configuration\\HTML5Components
+* **Defaults**: `C:\Program Files\Adobe\Adobe Animate CC 2017\Common\Configuration\HTML5Components`
+* **Custom**: `C:\Users\KahWee\AppData\Local\Adobe\Animate CC 2017\en_US\Configuration\HTML5Components`
 
 The rest of this is a guide to how Animate CC locates the contents in the directory and build up the Components panel you now see.
 
-The slashes may get confusing, the convention of Adobe is to use the UNIX-style slashes `/` instead of Windows `\\` as the directory separator so be sure to stick with it.
+The slashes may get confusing, the convention of Adobe is to use the UNIX-style slashes `/` instead of Windows `\` as the directory separator so be sure to stick with it.
 
 ## Diving into the main directories
 
@@ -56,7 +57,7 @@ If there's a component to start learning from, I'll humbly suggest "Video" as it
 
 ![Animate CC Components Panel](/img/animate-cc-canvas-with-component.png)
 
-The component is available as it picks up contents from `.\\HTML5Components\\video\\components.js` which is a JSON file.
+The component is available as it picks up contents from `.\HTML5Components\video\components.js` which is a JSON file.
 
     {
       "category": "CATEGORY_VIDEO",
@@ -86,13 +87,13 @@ The component is available as it picks up contents from `.\\HTML5Components\\vid
 
 In the above JSON file -- oddly named `components.json`, you see `components` key holding an array. In the case of the "Video" category, there is only one component -- "Video". A good way to learn how to define the component is to modify and reload the Components Panel in ACC.
 
-## Defing properties in Video
+## Defining properties in Video
 
 There are 8 properties and they all correspond to what is in the Property Panel in order.
 
 ![Animate CC Property Panel for Video](/img/animate-cc-component-property.png)
 
-The `properties\[\].name` placeholders can be defined in `.\\HTML5Components\\video\\locale\\strings.json`. Here's the contents for the file:
+The `properties\[\].name` placeholders can be defined in `.\HTML5Components\video\locale\strings.json`. Here's the contents for the file:
 
     {
       "locale": "en_US",
@@ -132,8 +133,8 @@ The `properties\[\].name` placeholders can be defined in `.\\HTML5Components\\vi
 
 Keys:
 
-* `name`: What we have here is to define that the name of this property is using the `PROP_CLASS` placeholder, of which you can locate in `.\\HTML5Components\\video\\locale\\strings.json` file.
-* `variable`: This is how to access the variable later in your code. It's going to look like this -- `this._options\['class'\]`, we will focus on this in a future post.
+* `name`: What we have here is to define that the name of this property is using the `PROP_CLASS` placeholder, of which you can locate in `.\HTML5Components\video\locale\strings.json` file.
+* `variable`: This is how to access the variable later in your code. It's going to look like this -- `this._options['class']`, we will focus on this in a future post.
 * `type`: This determines a text field to be used in the "Property Panel"
 * `default`: This sets the default value of the text field to "video"
 
@@ -141,4 +142,4 @@ In this case, `class` is used in defining the class for the "Video" component wh
 
 ## End
 
-This post gets a little longer than I hope for. I'll end here and guide you through the source code of the "Video" component in the next post. We'll dive into `components\[\].source`, located in `.\\HTML5Components\\video\\src\\video.js`.
+This post gets a little longer than I hope for. I'll end here and guide you through the source code of the "Video" component in the next post. We'll dive into `components\[\].source`, located in `.\HTML5Components\video\src\video.js`.
