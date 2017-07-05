@@ -1,7 +1,7 @@
 {
-  "name": "victor-hugo",
+  "name": "@kahwee/javascript-sg",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+  "description": "Source code for JavaScript.sg. Feel free to help out.",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -9,13 +9,12 @@
     "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
-    "lint": "eslint src"
+    "lint": "standard src"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^7.1.1",
-    "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.10.2",
@@ -27,8 +26,6 @@
     "css-loader": "^0.28.4",
     "cssnano": "^3.9.1",
     "date-fns": "^1.27.2",
-    "eslint": "^3.1.1",
-    "eslint-plugin-import": "^1.11.1",
     "exports-loader": "^0.6.3",
     "file-loader": "^0.9.0",
     "gulp": "^3.9.1",
@@ -51,6 +48,7 @@
     "gulp-inject": "^4.2.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
+    "standard": "^10.0.2",
     "svg-sprite-loader": "^0.1.2"
   }
 }
