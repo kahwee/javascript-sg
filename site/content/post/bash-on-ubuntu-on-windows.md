@@ -2,7 +2,8 @@
 date: 2016-08-15T00:00:00Z
 published: true
 title: Bash on Ubuntu on Windows
-url: /2016/08/15/bash-on-ubuntu-on-windows.html
+aliases:
+- /2016/08/15/bash-on-ubuntu-on-windows.html
 ---
 
 So Microsoft added Ubuntu into Windows which is quite nice (besides the rather mouthful name). Let's dig a little beneath the surface of things.

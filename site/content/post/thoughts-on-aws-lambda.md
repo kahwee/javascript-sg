@@ -9,7 +9,8 @@ tags:
 - api
 - microservice
 title: Thoughts on AWS Lambda
-url: /2016/09/04/thoughts-on-aws-lambda.html
+aliases:
+- /2016/09/04/thoughts-on-aws-lambda.html
 ---
 
 Amazon Web Services has a product called Lambda that I had the opportunity to test out in a Hackathon. It made me rethink what micro-services is about.
