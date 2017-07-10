@@ -3,6 +3,10 @@ date: 2016-08-05T00:00:00Z
 published: true
 title: Learnings from CORS
 url: /2016/08/05/learnings-from-cors.html
+tags:
+- example
+- cors
+- server
 ---
 
 CORS is a little hard to understand. I'll give you a quick overview of what it is about.

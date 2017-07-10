@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://javascript.sg/"
 languageCode = "en-us"
 title = "JavaScript.sg"
 theme = "embryo"
@@ -31,7 +31,7 @@ disqusShortname = ""
   readMore = ""
   copyright = ""
   # Sharing options and author information in posts
-  aboutAuthor = "I'm an blogger."
+  aboutAuthor = "A local foreigner."
   tweet = ""
   share = ""
   # 404 page
@@ -48,7 +48,7 @@ disqusShortname = ""
   pre = "<i class='fa fa-heart'></i>"
   weight = -110
   identifier = "about"
-  url = "/about/"
+  url = "/pages/about/"
 
 # Add additional social link entries underneath
 [social]

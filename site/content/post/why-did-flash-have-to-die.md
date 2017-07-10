@@ -3,6 +3,9 @@ date: 2016-08-10T00:00:00Z
 published: true
 title: Why did Flash have to die?
 url: /2016/08/10/why-did-flash-have-to-die.html
+tags:
+- opinion
+- flash
 ---
 
 *(Disclaimer: I work in the advertising industry which utilize Flash for advertising opportunities.)*
