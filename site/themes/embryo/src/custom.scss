@@ -1,4 +1,54 @@
+body>section.section {
+  padding-top: 1.5rem;
+}
+#toc {
+  &>ul.menu-list {
+    margin: 0;
+    list-style: none;
+    &>li>nav>ul {
+      margin-left: 0;
+      border-left: 0;
+      padding-left: 0;
+      list-style: none;
+      &>li>ul {
+        margin-left: 0;
+        border-left: 0;
+        padding-left: 0;
+        list-style: none;
+        &>li {
+          &>li>ul {
+            margin-left: 0;
+            border-left: 0;
+            padding-left: 0;
+            list-style: none;
+            &>li {
+              &>a {
+              }
+              &>ul {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-.content pre {
-  padding: 0;
+.navbar {
+  background: $primary-invert;
+}
+
+.content {
+  pre {
+    padding: 0;
+    code {
+      background: #eee;
+    }
+  }
+  header {
+    #tags {
+      margin-bottom: 2em;
+    }
+  }
 }

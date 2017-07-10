@@ -1,13 +1,12 @@
 {{ define "profile" }}
-<div class="columns is-multiline is-mobile">
-  <div class="column">
-    <div class="content is-medium">
-      {{ partial "profile.html" . }}
-    </div>
-  </div>
+<div class="column is-one-quarter">
+  {{ partial "profile.html" . }}
 </div>
 {{ end }}
+
 {{ define "main" }}
+<div class="column">
   {{ partial "post-list.html"  . }}
   {{ partial "pagination.html" . }}
+</div>
 {{ end }}

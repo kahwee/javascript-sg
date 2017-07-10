@@ -1,8 +1,16 @@
 {{ define "profile" }}
-	{{ partial "profile.html" . }}
+<div class="column is-one-quarter">
+  {{ partial "profile.html" . }}
+</div>
 {{ end }}
 
 {{ define "main" }}
-	{{ partial "post-list.html"  . }}
-	{{ partial "pagination.html" . }}
+<div class="column">
+  {{ partial "post-list.html"  . }}
+  <div class="columns is-clearfix">
+    <div class="column">
+      {{ partial "pagination.html" . }}
+    </div>
+  </div>
+</div>
 {{ end }}

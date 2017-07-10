@@ -1,51 +1,63 @@
 {{ define "main" }}
-<div class="columns is-multiline is-mobile">
-  <div class="column">
-    <div class="content is-medium">
-      <header>
-        <h1>{{ .Title }}</h1>
-        <h5>
-        {{ .Date.Format "January 2, 2006" }}
-        <hr>
-        {{ with .Params.tags }}
-        {{ if ge (len .) 1 }}
-          {{ range . }}
-            <span class="tag">
-              <a href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
-            </span>
+<div class="column">
+  <nav class="breadcrumb is-centered is-large">
+    <ul>
+      <li><a>Post</a></li>
+      <li class="is-active"><h1><a>{{ .Title }}</a></h1></li>
+    </ul>
+  </nav>
+  <div class="columns">
+    <div class="column is-one-quarter">
+      <header class="content is-small">
+          <p>First published on {{ .Date.Format "January 2, 2006" }}</p>
+          <section id="tags" class="is-spaced subtitle">
+          {{ with .Params.tags }}
+          {{ if ge (len .) 1 }}
+            {{ range . }}
+              <span class="tag">
+                <a href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
+              </span>
+            {{ end }}
           {{ end }}
-        {{ end }}
-        {{ end}}
-        </h5>
+          {{ end}}
+          </section>
       </header>
-      <section id="toc">
-        {{ .TableOfContents }}
-      </section>
-      <section id="post-body">
-        {{ .Content }}
-      </section>
+      <footer>
+        <aside id="toc" class="menu">
+          <p class="menu-label">
+            Chapters
+          </p>
+          <ul class="menu-list">
+            <li>
+              {{ .TableOfContents }}
+            </li>
+          </ul>
+        </aside>
+        {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
+        <div>
+          <span class="dark">{{ .Site.Params.name }}</span>
+          <span>{{ .Site.Params.aboutAuthor }}</span>
+        </div>
+        {{ with .Site.Params.twitter }}</a>{{ end }}
+        <section id="sharing">
+          {{ partial "share.html" . }}
+        </section>
+      </footer>
     </div>
-  </div>
 
-  <div class="column is-one-quarter">
-
-    <footer id="post-meta" class="clearfix">
-      {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
-      <img class="avatar" src="{{ "images/avatar.png" | absURL }}">
-      <div>
-        <span class="dark">{{ .Site.Params.name }}</span>
-        <span>{{ .Site.Params.aboutAuthor }}</span>
+    <div class="column">
+      <div class="content">
+        <header>
+        </header>
+        <section id="post-body">
+          {{ .Content }}
+        </section>
       </div>
-      {{ with .Site.Params.twitter }}</a>{{ end }}
-      <section id="sharing">
-        {{ partial "share.html" . }}
-      </section>
-    </footer>
+    </div>
+
   </div>
+
+
+  {{ template "_internal/disqus.html" . }}
 </div>
-
-
-{{ template "_internal/disqus.html" . }}
-
-{{ partial "latest-posts.html" . }}
 {{ end }}

@@ -1,13 +1,16 @@
-{{ range where .Paginator.Pages "Section" "ne" "" }}
-<article class="media">
-  <div class="media-content">
-    <div class="content">
-      <a href='{{ .URL }}'>
-        <p>{{ .Date.Format "Jan 2 2006" }}</p>
-        <p class="title is-4">{{ .LinkTitle }}</p>
-        <p class="subtitle is-6">{{ .Description | markdownify }}</p>
-      </a>
-    </div>
+{{ $list := (where .Paginator.Pages "Section" "ne" "") }}
+{{ $len := (len $list) }}
+  {{ range $index, $element := $list }}
+  {{ if (eq (mod $index 3) 0) }}
+    <div class="columns">
+  {{ else }}
+  {{ end }}
+  <div class="column is-one-third">
+    {{ partial "post-card.html"  . }}
   </div>
-</article>
+  {{ if (eq (mod $index 3) 2) }}
+    </div>
+  {{ else if (eq $index (sub $len 1))}}
+    </div>
+  {{ end }}
 {{ end }}

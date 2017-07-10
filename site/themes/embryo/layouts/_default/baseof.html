@@ -7,8 +7,10 @@
   {{ partial "nav.html" . }}
   <section class="section">
     <div class="container">
-    {{ block "profile" . }}{{ end }}
-    {{ block "main" . -}}{{- end }}
+      <div class="columns">
+      {{ block "profile" . }}{{ end }}
+      {{ block "main" . -}}{{- end }}
+      </div>
     </div>
   </section>
   {{ partial "footer.html" . }}

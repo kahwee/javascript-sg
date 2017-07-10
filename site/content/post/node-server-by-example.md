@@ -15,7 +15,7 @@ We are going to create a simple web server to serve some dyanmic content. In her
 
 You are encouraged to use node.js 8.1.3 or above.
 
-## Level 01: The minimal server
+## Chapter 01: The minimal server
 
 We want to start of with a server that that contains the most basic set of code:
 
@@ -94,7 +94,7 @@ HTTP and HTTPS websites are hosted on port 80 and 443 respectively as a default.
 
 A typical setup for a node.js server is to run it on a port other than port 80 and have it fronted with `nginx`. We shall see how to do this as we continue this tutorial.
 
-## Level 02: A little more dynamism
+## Chapter 02: A little more dynamism
 
 Next we are going to attempt to serve an HTML file. Here's what we can start with. We replace "Hello world" we had previously with some HTML.
 
@@ -104,10 +104,10 @@ const server = http.createServer((req, res) => {
   const html = `<!DOCTYPE html>
 <html>
 <head>
-  <title>Level 02</title>
+  <title>Chapter 02</title>
 </head>
 <body>
-  <h1>Level 02</h1>
+  <h1>Chapter 02</h1>
   <p>Hello World</p>
 </body>
 </html>`
@@ -125,10 +125,10 @@ Unfortunately this gets unwieldly when you get larger HTML files. Let's place th
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Level 02</title>
+  <title>Chapter 02</title>
 </head>
 <body>
-  <h1>Level 02</h1>
+  <h1>Chapter 02</h1>
   <p>Hello World</p>
 </body>
 </html>
@@ -214,7 +214,7 @@ const server = http.createServer((req, res) => {
 server.listen(3001)
 ```
 
-## Level 03: What about URL paths
+## Chapter 03: What about URL paths
 
 These are tiny steps to writing a web server. It is only practical to have web servers support multiple URL paths.
 
@@ -228,10 +228,10 @@ We are going to start with 2 HTMLs and make the web server load different pages 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Level 03</title>
+  <title>Chapter 03</title>
 </head>
 <body>
-  <h1>Level 03</h1>
+  <h1>Chapter 03</h1>
   <p>index.html</p>
 </body>
 </html>
@@ -245,10 +245,10 @@ The `<p>` now writes `path1.html`.
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Level 03</title>
+  <title>Chapter 03</title>
 </head>
 <body>
-  <h1>Level 03</h1>
+  <h1>Chapter 03</h1>
   <p>path1.html</p>
 </body>
 </html>
@@ -389,19 +389,19 @@ Transfer-Encoding: chunked
 
 As we did not send any body content, the browser will display a blank page to the user.
 
-## Level 04: Supporting complex requests from the browser
+## Chapter 04: Supporting complex requests from the browser
 
 Let's recap what we've went through:
 
-* **Level 01**: we did a simple server using the `http` module
-* **Level 02**: we loaded a HTML file to the user
-* **Level 03**: we loaded a different HTML file when the user request from different URL paths
+* **Chapter 01**: we did a simple server using the `http` module
+* **Chapter 02**: we loaded a HTML file to the user
+* **Chapter 03**: we loaded a different HTML file when the user request from different URL paths
 
 It looks like our code is getting longer and this seems like a set of really trivial operations. While it's useful to understand the underlying `http` functions in node.js, there's a tradeoff of code readability and maintenance.
 
 Most node.js developers therefore use a package called `express` and related plugins to reduce some of these code. The recommended method of installing these is via the `npm` package manager. `npm` comes preinstalled when you install node.js.
 
-## Level 05: Converting to express
+## Chapter 05: Converting to express
 
 We are going to give some structure to our work. Firstly, `index.html` and `path1.html` should be in its own directory called `./public`. We will also put our server code into `./server`. This is largely my opinion, however I recommend you follow through first.
 
@@ -511,10 +511,10 @@ The `./public/index.html` file:
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Level 05</title>
+  <title>Chapter 05</title>
 </head>
 <body>
-  <h1>Level 05</h1>
+  <h1>Chapter 05</h1>
   <p>index.html</p>
 </body>
 </html>
@@ -526,10 +526,10 @@ The `./public/path1.html` file:
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Level 05</title>
+  <title>Chapter 05</title>
 </head>
 <body>
-  <h1>Level 05</h1>
+  <h1>Chapter 05</h1>
   <p>path1.html</p>
 </body>
 </html>

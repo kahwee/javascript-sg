@@ -1,16 +1,28 @@
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      {{ if .Site.Social }}
-        {{ partial "social.html" . }}
-      {{ end }}
-      <p class="small">
-      {{ with .Site.Params.copyright }}
-        {{ . | markdownify }}
-      {{ else }}
-        © Copyright {{ now.Format "2006" }} {{ .Site.Params.name }}
-      {{ end }}
-      </p>
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <div class="content">
+          {{ if .Site.Params.enableRSS }}
+            <a class="cta" href="{{ .Site.RSSLink }}">{{ .Site.Params.subscribe | default "Subscribe" }}</a>
+          {{ end }}
+          {{ if .Site.Social }}
+            {{ partial "social.html" . }}
+          {{ end }}
+          <p class="tsp">
+            <small>
+              {{ with .Site.Params.copyright }}
+                {{ . | markdownify }}
+              {{ else }}
+                © Copyright {{ now.Format "2006" }} {{ .Site.Params.name }}
+              {{ end }}
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        {{ partial "latest-posts.html" . }}
+      </div>
     </div>
   </div>
 </footer>

@@ -1,0 +1,30 @@
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{ .LinkTitle }}
+    </p>
+    <a class="card-header-icon">
+      <span class="icon">
+        <i class="fa fa-angle-down"></i>
+      </span>
+    </a>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      {{ .Description | markdownify }}
+      <br>
+      {{ with .Params.tags }}
+      {{ if ge (len .) 1 }}
+        {{ range . }}
+          <span class="tag">
+            <a href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
+          </span>
+        {{ end }}
+      {{ end }}
+      {{ end}}
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a class="card-footer-item" href='{{ .URL }}'>Read more</a>
+  </footer>
+</div>

@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Homepage"
+title = "JavaScript.sg"
 theme = "embryo"
 googleAnalytics = "UA-175843-10"
 # Disable comments by leaving disqusShortname empty
@@ -42,6 +42,13 @@ disqusShortname = ""
   iconFont = "mono-social"
     # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
     socialIconStyle = "circle"
+
+[[menu.main]]
+  name = "About"
+  pre = "<i class='fa fa-heart'></i>"
+  weight = -110
+  identifier = "about"
+  url = "/about/"
 
 # Add additional social link entries underneath
 [social]

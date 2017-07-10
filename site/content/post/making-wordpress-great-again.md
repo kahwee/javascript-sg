@@ -5,6 +5,7 @@ title: Making WordPress great again
 url: /2016/08/03/making-wordpress-great-again.html
 ---
 
+
 I recently upgraded to Ubuntu 16.04 only to learn that it's PHP7 now. Yes, I'm outdated. I wake up to finding my WordPress not working.
 
 So we need to install php 7 and make some modifications.
