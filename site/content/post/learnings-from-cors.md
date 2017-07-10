@@ -4,7 +4,7 @@ published: true
 title: Learnings from CORS
 description: Using CORS
 url: /2016/08/05/learnings-from-cors.html
-alias:
+aliases:
 - /2016/06/12/how-to-make-vary-origin-in-aws-s3.html
 tags:
 - example

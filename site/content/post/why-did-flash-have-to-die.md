@@ -3,6 +3,7 @@ date: 2016-08-10T00:00:00Z
 published: true
 title: Why did Flash have to die?
 url: /2016/08/10/why-did-flash-have-to-die.html
+description: Some thoughts on why Flash is not good for the web
 tags:
 - opinion
 - flash
