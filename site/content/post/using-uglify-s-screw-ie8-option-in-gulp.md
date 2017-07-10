@@ -2,9 +2,8 @@
 date: 2016-05-27T00:00:00Z
 published: true
 title: Using Uglify screw-ie8 option in gulp
-alias: [
-  /2016/05/27/using-uglify-s-screw-ie8-option-in-gulp.html
-]
+alias:
+- /2016/05/27/using-uglify-s-screw-ie8-option-in-gulp.html
 ---
 
 UglifyJS tries to be IE-proof, you can pass a flag in Uglify if you don't care about full compliance with Internet Explorer 6-8 quirks.
