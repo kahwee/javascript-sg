@@ -1,7 +1,9 @@
 ---
 date: 2016-05-27T00:00:00Z
 published: true
-title: Using Uglify screw-ie8 option in gulp
+title: Using Uglify programmatically
+tags:
+- uglifyjs
 aliases:
 - /2016/05/27/using-uglify-s-screw-ie8-option-in-gulp.html
 ---
