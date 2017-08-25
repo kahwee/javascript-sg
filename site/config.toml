@@ -53,6 +53,6 @@ disqusShortname = ""
 
 # Add additional social link entries underneath
 [social]
-  twitter  = "https://www.twitter.com/kahwee"
-  facebook = "https://www.facebook.com/kahwee"
-  github   = "https://www.github.com/kahwee"
+  twitter  = "https://twitter.com/kahwee"
+  facebook = "https://facebook.com/kahwee"
+  github   = "https://github.com/kahwee"
