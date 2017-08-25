@@ -2,6 +2,7 @@ baseurl = "https://javascript.sg/"
 languageCode = "en-us"
 title = "JavaScript.sg"
 theme = "embryo"
+titleCaseStyle = "AP"
 googleAnalytics = "UA-175843-10"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
