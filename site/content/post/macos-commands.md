@@ -1,7 +1,7 @@
 ---
 title: "macOS Commands"
 date: 2017-08-28T11:41:43-07:00
-draft: true
+published: true
 tags: ["macos", "cli", "command"]
 ---
 
