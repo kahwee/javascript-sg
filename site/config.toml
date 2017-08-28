@@ -5,7 +5,7 @@ theme = "embryo"
 titleCaseStyle = "AP"
 googleAnalytics = "UA-175843-10"
 # Disable comments by leaving disqusShortname empty
-disqusShortname = ""
+disqusShortname = "javascript-sg"
 
 [params]
   name = "KahWee Teng"

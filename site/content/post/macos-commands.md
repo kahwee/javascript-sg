@@ -1,11 +1,16 @@
 ---
 title: "macOS Commands"
 date: 2017-08-28T11:41:43-07:00
+description: Quick fixes for macOS issues using the Terminal
 published: true
-tags: ["macos", "cli", "command"]
+tags:
+- macos
+- cli
+- command
+- terminal
 ---
 
-My work computer is using macOS Sierra with a touch bar. As much as I am excited about this new computer, using it hasn't been particularly smooth. Therefore I'm consolidating a list of commands that has helped me get around using macOS. You may find this helpful too. If you like to contribute, hit on up on Github.
+My work computer is using macOS Sierra with a touch bar. As much as I am excited about this new computer, using it hasn't been particularly smooth. Therefore I'm consolidating a list of commands that has helped me get around using macOS. You may find this helpful too. If you like to contribute, change it on [Github](https://github.com/kahwee/javascript-sg/blob/master/site/content/post/macos-commands.md).
 
 ## Reindexing Spotlight
 
