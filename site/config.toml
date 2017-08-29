@@ -6,6 +6,7 @@ titleCaseStyle = "AP"
 googleAnalytics = "UA-175843-10"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = "javascript-sg"
+enableRobotsTXT = true
 
 [params]
   name = "KahWee Teng"
