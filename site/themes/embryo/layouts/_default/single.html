@@ -9,7 +9,7 @@
   <div class="columns">
     <div class="column is-one-quarter">
       <header class="content is-small">
-          <p>First published on {{ .Date.Format "January 2, 2006" }}</p>
+          <p>Published on {{ .Date.Format "January 2, 2006" }}</p>
           <section id="tags" class="is-spaced subtitle">
           {{ with .Params.tags }}
           {{ if ge (len .) 1 }}
