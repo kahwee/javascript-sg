@@ -1,15 +1,22 @@
 ---
 date: 2016-08-11T00:00:00Z
 published: true
-title: How to run PHP 5.6 with Apache in El Capitan
+title: Modern way to run PHP in macOS
+description: Updated to include macOS Sierra
 url: /2016/08/11/how-to-run-php-5-6-with-apache-in-el-capitan.html
 ---
+
+## macOS Sierra
+
+Sierra update is coming.
+
+## Mac OS X El Capitan
 
 I'm assuming you like to install PHP 5.6 with MySQL and want something more than MAMP. Good news is that Mac OS X El Capitan comes with Apache so you simply have to configure it.
 
 To begin, you will need Homebrew, if you don’t already have that, install it [here](http://brew.sh/).
 
-## Installing MySQL and PHP 5.6
+### Installing MySQL and PHP 5.6
 
 ```sh
 brew install mysql
@@ -17,7 +24,7 @@ brew install php56
 brew install php56-mcrypt
 ```
 
-## Updating Apache httpd configuration
+### Configuring Apache httpd
 
 Next you will need to edit your Apache configuration. Open `/private/etc/apache2/httpd.conf` for that.
 
@@ -36,7 +43,7 @@ LoadModule php5_module    /usr/local/opt/php56/libexec/apache2/libphp5.so
 
 Notice that php5_module is referencing the Homebrew version. Note that your php.ini file can be found in: `/usr/local/etc/php/5.6/php.ini`
 
-## Starting the servers
+### Starting the servers
 
 Start MySQL this way:
 
@@ -50,7 +57,7 @@ Start Apache this way (you will need sudo):
 sudo apachectl start
 ```
 
-## Using VirtualHost
+### Using VirtualHost
 
 If you're using VirtualHost, you will need to uncomment the following line in `/private/etc/apache2/httpd.conf`. Search and uncomment this:
 

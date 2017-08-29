@@ -2,6 +2,7 @@
 date: 2016-08-15T00:00:00Z
 published: true
 title: Bash on Ubuntu on Windows
+description: Experience using Bash on Ubuntu on Windows
 tags:
 - bash
 - ubuntu

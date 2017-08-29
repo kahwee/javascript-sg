@@ -1,4 +1,4 @@
-{{ $list := (where .Paginator.Pages "Section" "ne" "") }}
+{{ $list := (where .Paginator.Pages "Type" "post") }}
 {{ $len := (len $list) }}
   {{ range $index, $element := $list }}
   {{ if (eq (mod $index 3) 0) }}
