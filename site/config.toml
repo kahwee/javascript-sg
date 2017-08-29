@@ -1,4 +1,4 @@
-baseurl = "https://javascript.sg/"
+baseurl = "/"
 languageCode = "en-us"
 title = "JavaScript.sg"
 theme = "embryo"
