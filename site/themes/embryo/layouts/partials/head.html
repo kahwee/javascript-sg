@@ -6,9 +6,15 @@
 {{ .Hugo.Generator }}
 <title>{{ .Title }}{{ if .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
 <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ "android-icon-192x192.png" | absURL }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ "apple-icon-152x152.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="32x32"  href="{{ "favicon-32x32.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="96x96"  href="{{ "favicon-96x96.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="16x16"  href="{{ "favicon-16x16.png" | absURL }}">
 <link rel="stylesheet" href="{{ "css/index.css" | absURL }}">
 {{ range .Site.Params.customCSS }}
 <link rel="stylesheet" href="{{ . | absURL }}">
+
 {{ end }}
 
 {{ if eq .Site.Params.iconFont "font-awesome" }}
