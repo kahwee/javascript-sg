@@ -95,6 +95,18 @@ The images in `wp-content` are also extracted out for you:
 ```
 These files are meant to be in the `content` directory.
 
+### Migrating comments
+
+I also have existing comments and I wanted to move them over to disqus. Hugo doesn't have a commenting feature.
+
+Note that users online are [complaining](https://wordpress.org/plugins/disqus-comment-system/#reviews) that the plugin is malicious and that it made your WordPress blog really slow:
+
+> This plugin will change most of the affiliate links on your website and I have articles completely seized by Disqus. So, if you have an affiliate-based website, by installing this plugin, you basically give up your incomes to them. No, they didn’t add links in comments, I repeat, they changed the existing ones to their own!
+
+With that in mind, you should only do this as a last step, right before you are going to delete your blog.
+
+Installing the plugin is relatively straight forward, once you have that activated, you can go to Comments -> Disqus, under "Import and Export", click on button that says "Export comments to Disqus".
+
 ## Export quality
 
 ### Front Matter
