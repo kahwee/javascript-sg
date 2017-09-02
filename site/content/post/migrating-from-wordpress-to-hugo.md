@@ -10,7 +10,7 @@ tags:
 
 I wanted something more optimized on the web and that means static site generators are the way to go. WordPress has it's own security issues and static site is close to impenetrable. Do note that I am not using much of the advance features of WordPress such as gallery creation and the well-crafted SEO plugins available. I really didn't have much to lose when I migrate to another tool.
 
-I have been using Hugo for at least 3 months now. I am impressed by the amount of time required to generate my content. Using Hugo allows me to manage my content via Github and that's a huge plus for me.
+I have been using Hugo for at least 3 months now. I am impressed by the amount of time required to generate my content. Using Hugo allows me to manage my content via Github and that's a huge plus for me. The plan is to migrate my [blog](https://i.justrealized.com/) for more than 1000 posts over.
 
 ### The Netlify advantage
 
