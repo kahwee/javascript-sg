@@ -1,9 +1,6 @@
 const gulp = require('gulp')
 const cp = require('child_process')
 const gutil = require('gulp-util')
-const postcss = require('gulp-postcss')
-const cssImport = require('postcss-import')
-const cssnext = require('postcss-cssnext')
 const BrowserSync = require('browser-sync')
 const webpack = require('webpack')
 const webpackConfig = require('./webpack.conf')
@@ -11,7 +8,6 @@ const svgstore = require('gulp-svgstore')
 const svgmin = require('gulp-svgmin')
 const inject = require('gulp-inject')
 const replace = require('gulp-replace')
-const cssnano = require('cssnano')
 
 const browserSync = BrowserSync.create()
 let hugoBin = `./bin/hugo.${process.platform === 'win32' ? 'exe' : process.platform}`
@@ -35,16 +31,6 @@ gulp.task('cms', () => {
 
 gulp.task('build', ['js', 'hugo', 'cms'])
 gulp.task('build-preview', ['css', 'js', 'hugo-preview'])
-
-gulp.task('css', () => (
-  gulp.src('./src/css/*.css')
-    .pipe(postcss([
-      cssImport({from: './src/css/main.css'}),
-      cssnano()
-    ]))
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(browserSync.stream())
-))
 
 gulp.task('js', (cb) => {
   const myConfig = Object.assign({}, webpackConfig)
