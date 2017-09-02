@@ -26,12 +26,6 @@ module.exports = {
     ]
   },
 
-  plugins: [
-    new webpack.ProvidePlugin({
-      'fetch': 'imports-loader?this=>global!exports?global.fetch!whatwg-fetch'
-    })
-  ],
-
   context: path.join(__dirname, 'src'),
   entry: {
     app: ['./js/app'],

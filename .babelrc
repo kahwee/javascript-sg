@@ -2,7 +2,6 @@
   "comments": false,
   "compact": true,
   "presets": [
-  	"react",
     [
       "env", {
         "useBuiltIns": true,

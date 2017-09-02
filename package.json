@@ -17,18 +17,13 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.13",
-    "date-fns": "^1.28.5",
-    "exports-loader": "^0.6.4",
     "file-loader": "^0.11.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-replace": "^0.6.1",
     "gulp-util": "^3.0.8",
-    "imports-loader": "^0.7.1",
-    "netlify-cms": "^0.5.0-beta.1",
     "url-loader": "^0.5.9",
-    "webpack": "^3.5.5",
-    "whatwg-fetch": "^2.0.3"
+    "webpack": "^3.5.5"
   },
   "devDependencies": {
     "gulp-inject": "^4.2.0",

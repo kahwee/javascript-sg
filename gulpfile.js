@@ -1,9 +1,6 @@
 const gulp = require('gulp')
 const cp = require('child_process')
-const gutil = require('gulp-util')
 const BrowserSync = require('browser-sync')
-const webpack = require('webpack')
-const webpackConfig = require('./webpack.conf')
 const svgstore = require('gulp-svgstore')
 const svgmin = require('gulp-svgmin')
 const inject = require('gulp-inject')
@@ -29,22 +26,8 @@ gulp.task('cms', () => {
     .pipe(browserSync.stream())
 })
 
-gulp.task('build', ['js', 'hugo', 'cms'])
-gulp.task('build-preview', ['css', 'js', 'hugo-preview'])
-
-gulp.task('js', (cb) => {
-  const myConfig = Object.assign({}, webpackConfig)
-
-  webpack(myConfig, (err, stats) => {
-    if (err) throw new gutil.PluginError('webpack', err)
-    gutil.log('[webpack]', stats.toString({
-      colors: true,
-      progress: true
-    }))
-    browserSync.reload()
-    cb()
-  })
-})
+gulp.task('build', ['hugo', 'cms'])
+gulp.task('build-preview', ['css', 'hugo-preview'])
 
 gulp.task('svg', () => {
   const svgs = gulp
@@ -62,13 +45,12 @@ gulp.task('svg', () => {
     .pipe(gulp.dest('site/layouts/partials/'))
 })
 
-gulp.task('server', ['hugo', 'js', 'svg', 'cms'], () => {
+gulp.task('server', ['hugo', 'svg', 'cms'], () => {
   browserSync.init({
     server: {
       baseDir: './dist'
     }
   })
-  gulp.watch('./src/js/**/*.js', ['js'])
   gulp.watch('./src/cms/*', ['cms'])
   gulp.watch('./site/static/img/icons/*.svg', ['svg'])
   gulp.watch('./site/**/*', ['hugo'])
