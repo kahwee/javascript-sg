@@ -11,10 +11,6 @@ module.exports = {
         use: 'file-loader?name=/[hash].[ext]'
       },
       {
-        test: /\.json$/,
-        use: 'json-loader'
-      },
-      {
         test: /\.js$/,
         use: [{
           loader: 'babel-loader?compact=true',

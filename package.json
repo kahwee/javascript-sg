@@ -19,17 +19,10 @@
     "browser-sync": "^2.18.13",
     "file-loader": "^0.11.2",
     "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.0",
     "gulp-replace": "^0.6.1",
-    "gulp-util": "^3.0.8",
-    "url-loader": "^0.5.9",
     "webpack": "^3.5.5"
   },
   "devDependencies": {
-    "gulp-inject": "^4.2.0",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-svgstore": "^6.1.0",
-    "standard": "^10.0.3",
-    "svg-sprite-loader": "^3.2.5"
+    "standard": "^10.0.3"
   }
 }

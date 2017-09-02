@@ -1,9 +1,6 @@
 const gulp = require('gulp')
 const cp = require('child_process')
 const BrowserSync = require('browser-sync')
-const svgstore = require('gulp-svgstore')
-const svgmin = require('gulp-svgmin')
-const inject = require('gulp-inject')
 const replace = require('gulp-replace')
 
 const browserSync = BrowserSync.create()
@@ -29,30 +26,13 @@ gulp.task('cms', () => {
 gulp.task('build', ['hugo', 'cms'])
 gulp.task('build-preview', ['css', 'hugo-preview'])
 
-gulp.task('svg', () => {
-  const svgs = gulp
-    .src('site/static/img/icons/*.svg')
-    .pipe(svgmin())
-    .pipe(svgstore({inlineSvg: true}))
-
-  function fileContents (filePath, file) {
-    return file.contents.toString()
-  }
-
-  return gulp
-    .src('site/layouts/partials/svg.html')
-    .pipe(inject(svgs, {transform: fileContents}))
-    .pipe(gulp.dest('site/layouts/partials/'))
-})
-
-gulp.task('server', ['hugo', 'svg', 'cms'], () => {
+gulp.task('server', ['hugo', 'cms'], () => {
   browserSync.init({
     server: {
       baseDir: './dist'
     }
   })
   gulp.watch('./src/cms/*', ['cms'])
-  gulp.watch('./site/static/img/icons/*.svg', ['svg'])
   gulp.watch('./site/**/*', ['hugo'])
 })
 
