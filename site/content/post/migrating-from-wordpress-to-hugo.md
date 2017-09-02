@@ -1,6 +1,7 @@
 ---
 title: "Migrating from Wordpress to Hugo"
 date: 2017-09-01T19:41:16-07:00
+description: My experience migrating a big WordPress site to Hugo
 tags:
   - hugo
 ---
@@ -15,7 +16,9 @@ I have been using Hugo for at least 3 months now. I am impressed by the amount o
 
 This isn't sponsored by Netlify but using Netlify together with Hugo is such a time-saver. I first heard of Netlify at a JAM Stack workshop in Google LaunchPad (San Francisco) and gave it a try. Netlify handles the deployment for you and puts your file in the CDN. If you don't need extra multiple user support, you're good for the free tier.
 
-## Installing the plugin
+## The actual migration
+
+### Installing the plugin
 
 [Cyrill Schumacher](https://github.com/SchumacherFM) wrote a super helpful plugin that you can install in your WordPress instance. Called [wordpress-to-hugo-exporter](https://github.com/SchumacherFM/wordpress-to-hugo-exporter), it does exactly as advertised.
 
@@ -23,7 +26,7 @@ To install, go to the [Github page](https://github.com/SchumacherFM/wordpress-to
 
 Once you're done, go to your WordPress Admin page and click on Plugins -> Add New. On the top, there "Upload Plugin". Upload the ZIP file you have just downloaded. If the upload fails, check that you granted the correct permissions in your web server's `wp-content` directory.
 
-## Installing plugin prerequisites
+### Installing plugin prerequisites
 
 Not that the plugin uses a PHP class called ZipArchive which is not installed by default. If you're using PHP 7.0 like I am, you need to run:
 
@@ -50,11 +53,11 @@ If you're using Apache's PHP module, be sure to restart Apache HTTPD:
 sudo service apache2 restart
 ```
 
-## Disable Jetpack's Image Performance
+### Disable Jetpack's Image Performance
 
 Make sure you turn off Jetpack's Image Performance feature which uses the CDN. This changes your WordPress images URL to the ones in WordPress's CDN. I doubt you will want that.
 
-## Exporting to Hugo
+### Exporting to Hugo
 
 Phew, that's a bit of work. Now go to your WordPress Admin again and activate the plugin you have just installed.
 
@@ -62,7 +65,7 @@ Then you can see a new menu item in Tools -> Export to Hugo.
 
 Clicking on it will give you the file `hugo-export.zip`.
 
-## What's in hugo-export.zip
+### What's in hugo-export.zip
 
 This is a sample of how my blog structure looks like:
 
@@ -144,4 +147,8 @@ The plugin converted my HTML to Markdown which is very nice. I will say it works
 * `&#8212;` should have been an em dash
 * `&#8211;` should have been an en dash
 * `img` tags don't get converted
+
+## Afterthoughts
+
+Moving to Hugo gave me a chance to clean up all the blog posts that are completely outdated and non-meaningful. I want to keep my blog up to date instead of just churning out hundreds of posts of low quality.
 
