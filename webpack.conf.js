@@ -1,29 +1,34 @@
 const webpack = require('webpack')
 const path = require('path')
+const fs = require('fs')
+const babelrc = JSON.parse(fs.readFileSync('./.babelrc', 'utf8'))
 
 module.exports = {
   module: {
     loaders: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file?name=/[hash].[ext]'
+        use: 'file-loader?name=/[hash].[ext]'
       },
       {
         test: /\.json$/,
-        loader: 'json-loader'
+        use: 'json-loader'
       },
       {
-        loader: 'babel',
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        test: /\.js$/,
+        use: [{
+          loader: 'babel-loader?compact=true',
+          options: Object.assign(babelrc, {
+            cacheDirectory: true
+          })
+        }]
       }
     ]
   },
 
   plugins: [
     new webpack.ProvidePlugin({
-      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+      'fetch': 'imports-loader?this=>global!exports?global.fetch!whatwg-fetch'
     })
   ],
 
