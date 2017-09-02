@@ -1,16 +1,17 @@
 ---
-date: 2016-09-04T00:00:00Z
+aliases:
+  - /2016/09/04/thoughts-on-aws-lambda.html
+date: 2016-09-04T00:00:00.000Z
 published: true
 tags:
-- amazon
-- aws
-- s3
-- lambda
-- api
-- microservice
+  - amazon
+  - aws
+  - s3
+  - lambda
+  - api
+  - microservice
 title: Thoughts on AWS Lambda
-aliases:
-- /2016/09/04/thoughts-on-aws-lambda.html
+description: Early thoughts on AWS Lambda
 ---
 
 Amazon Web Services has a product called Lambda that I had the opportunity to test out in a Hackathon. It made me rethink what micro-services is about.
@@ -22,3 +23,4 @@ The only downside is that you have to upload a ZIP source code all the time to d
 I may be overthinking here. The terrible interface to update my files worked in its advantage, it encourages me to not deploy too many times. What I find myself doing is splitting up my code into small pieces, after all, each time some piece of code reaches a level of stability, it doesn't have to be touched anymore. And that in turn reinforces the idea of micro-services -- doing just one small bit super reliably.
 
 Great job Amazon! I'm excited over what more it can do.
+
