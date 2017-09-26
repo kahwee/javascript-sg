@@ -1,13 +1,13 @@
 ---
-title: "macOS Commands"
-date: 2017-08-28T11:41:43-07:00
+title: macOS Commands
+date: 2017-08-28T18:41:43.000Z
 description: Quick fixes for macOS issues using the Terminal
 published: true
 tags:
-- macos
-- cli
-- command
-- terminal
+  - macos
+  - cli
+  - command
+  - terminal
 ---
 
 My work computer is using macOS Sierra with a touch bar. As much as I am excited about this new computer, using it hasn't been particularly smooth. Therefore I'm consolidating a list of commands that has helped me get around using macOS. You may find this helpful too. If you like to contribute, change it on [Github](https://github.com/kahwee/javascript-sg/blob/master/site/content/post/macos-commands.md).
@@ -102,4 +102,12 @@ set -k
 # The above line makes comments work in interactive mode for zsh
 brew install yarn      # A moderately faster npm equivalent
 brew install nvm       # node versioning manager
+```
+
+### Sourcetree not installing Command Line Tools
+
+Sourcetree refuse to "Install Command Line Tools"? It's been a bug for two years. The solution is to do this:
+
+```
+ln -s /Applications/SourceTree.app/Contents/Resources/stree /usr/local/bin/
 ```
