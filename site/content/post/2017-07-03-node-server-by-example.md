@@ -19,7 +19,7 @@ You are encouraged to use node.js 8.1.3 or above.
 
 We want to start of with a server that that contains the most basic set of code:
 
-```javascript{2-5}
+```javascript
 const http = require('http')
 const server = http.createServer((req, res) => {
   res.write('Hello world')
