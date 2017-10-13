@@ -15,6 +15,7 @@ enableRobotsTXT = true
   # Enter optionally your twitter account
   twitter = "kahwee"
   enableRSS = true
+  googleMapsApi = "AIzaSyBexFAhPlgJ-OigRIfG4vA54eWT26Rhz7Y"
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
