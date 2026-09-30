@@ -1,9 +1,23 @@
 # javascript-sg
 
-Hi, I'm KahWee and you've reached my website's source code. You are welcomed to merge in changes into my website.
+Historical Hugo/Gulp source for JavaScript.sg. Posts live in
+[site/content/post/](site/content/post/); the theme is
+[site/themes/embryo/](site/themes/embryo/).
 
-## Getting started
+## Local workflow
 
-If you want to help by adding and modify articles, take a look at the [post directory](https://github.com/kahwee/javascript-sg/tree/master/site/content/post)
+The committed scripts require Hugo on PATH, Node, and Yarn:
 
-You may need to fork if you want to add in some images.
+```sh
+npm install
+npm start
+npm run build
+```
+
+`start` builds Hugo/CMS assets and serves `dist/` with BrowserSync. `build`
+also installs and builds the theme through Yarn. Both root npm and Yarn
+lockfiles are retained; this pass does not select or migrate the old toolchain.
+
+These commands were checked against [package.json](package.json) and
+[gulpfile.js](gulpfile.js), but the historical dependencies were not installed
+or rebuilt on the current runtime.
